@@ -50,21 +50,13 @@ def calculate_days_coverage(demand_df, invent_df):
 
 
 
-        
-def convert_to_datetime(input_date):
-    if isinstance(input_date, datetime):
-        return input_date 
-    else:
-        return datetime.strptime(input_date, '%Y-%m-%d')
-        
-
-
-
     
             
     
 
 st.title('Breadfast Task by Yahia Galal')
+st.markdown("<h6 style='font-size:10px;'>Note: the data columns for forecast data must be of order id, date, forcasted sales and for inventory data product_id, batch_id, expiry_date and inventory (exact names does not matter).</h6>", unsafe_allow_html=True)
+
 
 uploaded_file1 = st.file_uploader("Upload the Forecast Data", type='csv')
 uploaded_file2 = st.file_uploader("Upload the Inventory Data", type='csv')
