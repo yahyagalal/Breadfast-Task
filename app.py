@@ -76,4 +76,4 @@ if uploaded_file1 and uploaded_file2:
     st.write("Processed:")
     st.write(result_df)
 else:
-    st.write("Please upload two Forecast and Inventory Data.")
+    st.write("Please upload the Forecast and Inventory Data.")
